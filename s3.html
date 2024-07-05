@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maryam personal website</title>
+
+    <!-- og meta tags for sharing a link in whatsapp or telegram -->
+    <meta property="og:title" content="The Rock" />
+    <meta property="og:type" content="video.movie" />
+    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+    <meta property="og:des" content="https://ia.media-imdb.com/images/rock.jpg" />
+
+    <!-- under dev/organizational websites so they are not indexed -->
+    <meta name="robot" content="index">
+    <meta name="robot" content="no index">
+    <meta name="robot" content="no follow">
+
+    <!-- internal style load takes long -->
+    <style>
+        /* tag selector */
+        div {
+            background-color: plum;
+            width: 500px;
+            height: 200px;
+            border: 2px solid purple;
+        }
+
+        /* class selector */
+        .my-class {
+            background-color: green;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* id selector */
+        #my-id {
+            background-color: aqua;
+            font-size: 18px;
+        }
+    </style>
+    <!-- external style better -->
+    <link rel="stylesheet" href="s3.css">
+</head>
+
+<body>
+    <!-- inline style wrong for seo fix them if you see -->
+    <div style="background-color: red; height: 200px; width: 200px;">
+        <h1>heading</h1>
+    </div>
+
+    <div>
+        <p class="my-class">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque tenetur quis dicta ab vero quas aspernatur
+            libero dolores quam numquam ea sapiente eligendi explicabo voluptas eum esse distinctio, sed dolore!
+        </p>
+        <p class="my-class">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque tenetur quis dicta ab vero quas aspernatur
+            libero dolores quam numquam ea sapiente eligendi explicabo voluptas eum esse distinctio, sed dolore!
+        </p>
+        <!-- can be used only once despite class -->
+        <p id="my-id">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque tenetur quis dicta ab vero quas aspernatur
+            libero dolores quam numquam ea sapiente eligendi explicabo voluptas eum esse distinctio, sed dolore!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque tenetur quis dicta ab vero quas aspernatur
+            libero dolores quam numquam ea sapiente eligendi explicabo voluptas eum esse distinctio, sed dolore!
+        </p>
+    </div>
+    <!-- external style best possible way for webpage load for seo -->
+    <link rel="stylesheet" href="s3.css">
+</body>
+
+</html>
